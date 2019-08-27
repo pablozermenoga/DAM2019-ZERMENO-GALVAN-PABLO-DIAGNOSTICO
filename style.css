@@ -1,23 +1,27 @@
 /* Contenedor del login */
 *{
-    padding:0px;
-    margin:0px;
+	padding:0px;
+	margin:0px;
 }
-.headbg{
-    background-color:black;
-    color:white;
-}
-
-.par{
-    background-color:#d1d1d1;
+	.headbg{
+	background-color:black;
+	color:white;
 }
 
-.text-center{
-    text-align: center;
+	.par{
+	background-color:#d1d1d1;
 }
 
-.text-left{
-    text
+    .text-center{
+	text-align: center;
+}
+
+	.text-left{
+	text-align:left;
+}
+
+    .text-right{
+	text-align:right;
 }
 
 

@@ -2,35 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Factorial</title>
-
-	<style>
-
-		*{
-			padding:0px;
-			margin:0px;
-		}
-		.headbg{
-			background-color:black;
-			color:white;
-		}
-
-		.par{
-			background-color:#d1d1d1;
-		}
-
-		.text-center{
-			text-align: center;
-		}
-
-		.text-left{
-			text-align:left;
-		}
-
-		.text-right{
-			text-align:right;
-		}
-	</style>
+	<title>Factorial</title>	
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 		<div style="margin:auto; width:80%;margin-top:30px">
@@ -52,15 +25,13 @@
 			</thead>
 			<tbody>
 				<?php
-
-
 					function background($cont){
 						if($cont%2 == 0)
 							return 'par';
 						else 
 							return 'impar';
 					}
-				if (isset($_GET['numero'])) {
+					if (isset($_GET['numero'])) {
 					$numero = $_GET['numero'];
 					$factorial= 1;
 					$cont = 1;
@@ -68,24 +39,18 @@
 						$factorial*=$cont;
 						$cont++;
 						//echo "Iteracion" . $i ." factorial " .$factorial. "<br>";
-						echo '
-								<tr class="'.background($cont).'">
-									<td class="text-center">'.$i.'</td>
-									<td class="text-left">'.$i.'*'.$i.'</td>
-									<td class="text-right">'.$factorial.'</td>
-								</tr>
-							';
-		
+						echo '<tr class="'.background($cont).'">
+								<td class="text-center">'.$i.'</td>
+								<td class="text-left">'.$i.'*'.$i.'</td>
+								<td class="text-right">'.$factorial.'</td>
+							</tr>';
 						}	
 					}
 
 				
-		?>
+				?>
 			</tbody>
 		</table>
-		</div>
-
-  
-
+	</div>
 </body>
 </html>
